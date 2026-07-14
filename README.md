@@ -3,5 +3,6 @@
 - 🌱 I’m currently learning advanced data structures, cloud architecture, and experimenting with new front-end frameworks.
 - 💞️ I’m looking to collaborate on open-source projects, innovative tools, and anything related to system optimization or app development.
 - 📫 How to reach me: via GitHub or on my tech blog where I share tips and tutorials.
+- ⚠️ Disclaimer: This profile and repositories are maintained for my personal overseas technical exchange. Please refrain from interaction if you intend to scrutinize, stalk or excessively observe my activity, to avoid unnecessary public attention and disputes.
 - 😄 Pronouns: He/Him.
 - ⚡ Fun fact: I’ve probably written more lines of code than tweets!
