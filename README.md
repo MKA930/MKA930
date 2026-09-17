@@ -1,8 +1,17 @@
 <div align="center">
 
-# Hi there 👋 I'm a Backend Developer & Scripting Enthusiast
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=MKA930&fontSize=42&fontColor=ffffff&animation=twinkling&fontAlignY=32" width="100%" />
 
-**Backend • Automation • AI-assisted Development • System Stability**
+<a href="https://github.com/MKA930">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=800&color=36BCF7&center=true&vCenter=true&width=700&lines=Product-Minded+Technical+Lead;Backend+%26+Systems+Engineer;End-to-End+Delivery;AI-Assisted+Development;Automation+Enthusiast" />
+</a>
+
+<br>
+
+[![Followers](https://img.shields.io/github/followers/MKA930?label=Followers&style=for-the-badge&color=0e75b6&labelColor=1a1b27)](https://github.com/MKA930)
+[![Stars](https://img.shields.io/github/stars/MKA930?label=Stars&style=for-the-badge&color=ffd700&labelColor=1a1b27)](https://github.com/MKA930)
+
+<br>
 
 [**English**](#-english) | [**中文**](#-中文)
 
@@ -56,11 +65,6 @@
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-
-**Scripting & Automation**  
-- BAT / CMD / PowerShell / Shell
-- Deployment scripts, log cleanup, scheduled tasks, environment bootstrap
-- Daily workflow automation and small internal tools
 
 **AI-assisted Development**  
 ![Codex](https://img.shields.io/badge/Codex-000000?style=flat-square&logo=openai&logoColor=white)
@@ -144,11 +148,6 @@ Thanks for your understanding. 🙏
 ![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 
-**脚本与自动化**  
-- BAT / CMD / PowerShell / Shell
-- 部署脚本、日志清理、定时任务、环境初始化
-- 日常流程自动化与小工具开发
-
 **AI 辅助开发**  
 ![Codex](https://img.shields.io/badge/Codex-000000?style=flat-square&logo=openai&logoColor=white)
 ![Tongyi Lingma](https://img.shields.io/badge/Tongyi%20Lingma-FF6A00?style=flat-square)
@@ -183,6 +182,6 @@ Thanks for your understanding. 🙏
 
 <div align="center">
 
-**Thanks for visiting! ⭐**
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer" width="100%" />
 
 </div>
