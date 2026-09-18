@@ -79,7 +79,7 @@
 
 ### 📌 What I Do
 
-- 8+ years of backend development experience across **advertising platforms, CRM, fintech auction trading, game backend, and IoT hardware integration**.
+- A decade of backend engineering since 2016, across **advertising platforms, CRM, fintech auction trading, game backend, and IoT hardware integration**.
 - Comfortable with **multiple languages and stacks**, not tied to a single one. Mainly work with PHP, Node.js, Python, SQL, and scripting languages.
 - Experienced in **high-concurrency optimization, async task processing, distributed locks, caching, and system stability**.
 - Familiar with **front-end and back-end separation**, React mobile pages, and WeChat ecosystem development.
@@ -161,7 +161,7 @@ Thanks for your understanding. 🙏
 
 ### 📌 我在做什么
 
-- 8 年以上后端开发经验，覆盖 **广告平台、CRM、金融拍卖交易、游戏后台、物联网硬件对接** 等业务。
+- 自 2016 年入行，深耕后端开发与系统建设，覆盖 **广告平台、CRM、金融拍卖交易、游戏后台、物联网硬件对接** 等业务。
 - 不绑定单一语言，主要使用 PHP、Node.js、Python、SQL 及脚本语言，多栈混用。
 - 熟悉 **高并发优化、异步任务处理、分布式锁、缓存与系统稳定性建设**。
 - 具备 **前后端分离**、React 移动端页面、微信生态开发经验。
