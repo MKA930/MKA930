@@ -25,7 +25,7 @@
 
 ### 👨‍💻 About Me
 
-Backend engineer since 2016, focused on system architecture and end-to-end delivery. Worked across fintech platforms, enterprise operation systems, IoT integrations, and business applications, covering architecture design, API design, concurrency, performance optimization, and production troubleshooting. Former **development lead**, with experience in project scheduling, architecture review, and delivering complex systems from requirement to production.
+Backend engineer since 2016, focused on system architecture and end-to-end delivery. Worked across fintech platforms, enterprise operations systems, IoT integrations, and business applications, covering architecture design, API design, concurrency, performance optimization, and production troubleshooting. Former **development lead**, with experience in project scheduling, architecture review, and delivering complex systems from requirement to production.
 
 Hands-on with **PHP ecosystems**, **Node.js**, **Python**, **MySQL / Redis / RabbitMQ**, **MQTT / Socket.IO / Workerman**, and **React** for mobile and web. I also build reusable engineering foundations, integrate realtime pipelines, and automate workflows with **Python**, **Shell**, **PowerShell**, and **BAT**.
 
@@ -40,14 +40,14 @@ Designed realtime event and alert pipelines using MQTT ingestion, message broker
 `MQTT` · `Socket.IO` · `Workerman` · `React`
 
 **Enterprise & Digital Platforms**  
-Worked across fintech platforms, enterprise operation systems, and business applications, covering architecture, API design, performance optimization, and production delivery.  
+Worked across fintech platforms, enterprise operations systems, and business applications, covering architecture, API design, performance optimization, and production delivery.  
 `Laravel` · `Yaf` · `MySQL` · `Redis`
 
 ### 🎯 Core Strengths
 
 - 🏗️ **System Architecture & High-Concurrency**: Designed async pipelines with RabbitMQ, distributed locks, and Redis caching to handle high traffic and ensure data consistency.
 - 📦 **End-to-End Delivery**: Former **development lead**; managed schedules, conducted architecture reviews, and delivered complex systems from requirement to production.
-- ⚡ **Performance Optimization**: Optimized core API response from **600ms to 200ms**, kept data anomaly rate below **0.1%**, and improved overall system throughput.
+- ⚡ **Performance Optimization**: Optimized core API latency by approximately **3×**, improving throughput and stability under high concurrency.
 - ⚙️ **Automation & Scripting**: Hands-on experience with **Python**, **BAT**, **PowerShell**, and **Shell** for deployment, monitoring, and workflow automation.
 
 ### 🧭 Architecture
@@ -167,7 +167,7 @@ Most repositories are private due to work and personal reasons. This profile mai
 
 - 🏗️ **系统架构与高并发**：使用 RabbitMQ、分布式锁、Redis 缓存设计异步任务链路，应对高流量并保证数据一致性。
 - 📦 **端到端交付**：曾任 **开发负责人**，具备项目排期、架构评审与复杂系统从需求到上线的交付经验。
-- ⚡ **性能优化**：核心接口响应时间从 **600ms 优化至 200ms**，数据异常率控制在 **0.1% 以下**，提升系统吞吐量。
+- ⚡ **性能优化**：核心接口响应时延优化约 **3 倍**，提升高并发场景下的系统吞吐量与稳定性。
 - ⚙️ **自动化与脚本**：具备 **Python**、**BAT**、**PowerShell**、**Shell** 脚本实践经验，用于部署、监控与流程自动化。
 
 ### 🧭 架构
