@@ -25,47 +25,34 @@
 
 ### 👨‍💻 About Me
 
-Backend engineer since 2016, with experience in system architecture and end-to-end delivery. Started with early web and content platform projects, then moved into game backend, game server, and game frontend development, gaining broad experience across backend, frontend, and system integration. Later served as backend lead for a fintech auction trading system, focusing on requirement analysis, API design, concurrency safety, and payment consistency. Former **development lead**, led **smart city**, **IoT**, and **digital operation platform** development, covering smart property, work order systems, medical logistics, and hardware alerts. Recently involved in an advertising system, focusing on requirement delivery, log-driven issue localization, and online fixes.
+Backend engineer since 2016, focused on system architecture and end-to-end delivery. Worked across fintech platforms, enterprise operation systems, IoT integrations, and business applications, covering architecture design, API design, concurrency, performance optimization, and production troubleshooting. Former **development lead**, with experience in project scheduling, architecture review, and delivering complex systems from requirement to production.
 
-Hands-on with the **WeChat ecosystem**: Official Account, Mini Program, open-source secondary development, and WordPress deployment. Covers map integration, real-time positioning, electronic fencing with breach alerts, WeChat notifications for work order creation, timeout and closure, media watermarking and attachment upload, plus manual intervention and automated closure of exceptional work orders. Also familiar with database recovery and emergency hotfixes on Linux servers. Built a **Yaf-based project foundation** from scratch, integrating common components and toolchains into a reusable engineering template. Hardware alert pipelines were implemented with **MQTT** and **Socket.IO**; the mobile client was built with React and integrated **Workerman** for real-time interaction.
+Hands-on with **PHP ecosystems**, **Node.js**, **Python**, **MySQL / Redis / RabbitMQ**, **MQTT / Socket.IO / Workerman**, and **React** for mobile and web. I also build reusable engineering foundations, integrate realtime pipelines, and automate workflows with **Python**, **Shell**, **PowerShell**, and **BAT**.
+
+### 🧩 Engineering Experience
+
+**Yaf Foundation**  
+Built a reusable PHP application foundation from scratch, integrating common components, tooling, and engineering conventions into a single project template.  
+`PHP` · `Yaf` · `Redis` · `MySQL`
+
+**IoT & Realtime Systems**  
+Designed realtime event and alert pipelines using MQTT ingestion, message brokers, Socket.IO push, and Workerman for realtime interaction.  
+`MQTT` · `Socket.IO` · `Workerman` · `React`
+
+**Enterprise & Digital Platforms**  
+Worked across fintech platforms, enterprise operation systems, and business applications, covering architecture, API design, performance optimization, and production delivery.  
+`Laravel` · `Yaf` · `MySQL` · `Redis`
 
 ### 🎯 Core Strengths
 
 - 🏗️ **System Architecture & High-Concurrency**: Designed async pipelines with RabbitMQ, distributed locks, and Redis caching to handle high traffic and ensure data consistency.
-- 📦 **End-to-End Delivery & Project Management**: Former **development lead**; managed schedules, conducted architecture reviews, and delivered complex systems from requirement to production.
-- ⚡ **Performance Optimization**: In the **smart city / property / CRM project**, reduced core API response from **600ms to 200ms**, kept data anomaly rate below **0.1%**, and improved overall system throughput.
-- 🤖 **AI-Assisted Development**: I treat AI as a productivity tool. My work covers **prompt engineering**, including requirement decomposition, **flow design**, **API design**, **logic design**, boundary definition, and hallucination prevention. AI-generated code undergoes multiple rounds of optimization and strict **logic, boundary, and performance validation** before integration.
+- 📦 **End-to-End Delivery**: Former **development lead**; managed schedules, conducted architecture reviews, and delivered complex systems from requirement to production.
+- ⚡ **Performance Optimization**: Optimized core API response from **600ms to 200ms**, kept data anomaly rate below **0.1%**, and improved overall system throughput.
 - ⚙️ **Automation & Scripting**: Hands-on experience with **Python**, **BAT**, **PowerShell**, and **Shell** for deployment, monitoring, and workflow automation.
-- 🧰 **Cross-Stack Engineering**: Worked across **PHP**, **Node.js**, **Python**, **SQL**, **React**, **Docker**, **Jenkins**, and more, adapting the stack to project requirements.
-- 🗄️ **Database**: Familiar with **MySQL** and **Redis**, including schema design, indexing, and query optimization. Also have hands-on experience with **SQLite** and **MongoDB**.
-- 💬 **WeChat & Open Platform**: Official Account, Mini Program, open-source secondary development, WordPress deployment, maps, electronic fencing, work order notifications, media processing, and exception handling.
-- 🧱 **Yaf Framework**: Built a reusable **Yaf** foundation from scratch, integrating common components and toolchains.
-
-### 🚀 Featured Projects
-
-**Yaf Foundation**  
-Reusable PHP project foundation with common components, toolchain integration, and convention-over-configuration design.  
-`PHP` · `Yaf` · `Redis` · `MySQL`  
-*Private — architecture and implementation experience.*
-
-**IoT Alert Pipeline**  
-Real-time hardware alert pipeline with MQTT ingestion, Socket.IO push, and React mobile client integration.  
-`MQTT` · `Socket.IO` · `Workerman` · `React`  
-*Private — architecture and implementation experience.*
-
-**Digital Operations Platform**  
-Digital workflow platform covering work order lifecycle, location-based services, real-time alerts, and exception handling.  
-`Laravel` · `Yaf` · `MySQL` · `Redis`  
-*Private — architecture and implementation experience.*
-
-**AI Engineering Lab — Ongoing Exploration**  
-Python-based experiments around AI Agents, LLM tooling, and AI-assisted software engineering workflows.  
-`Python` · `LLM` · `AI Agent`  
-*Exploration in progress.*
 
 ### 🧭 Architecture
 
-Representative architecture pattern from real-time IoT and digital operation platforms.
+Representative architecture pattern from realtime IoT and digital operation platforms.
 
 ```text
 IoT Devices / Sensors
@@ -137,8 +124,9 @@ Realtime Gateway
 AI Agents · LLM Tooling · AI-assisted Development  
 Daily tooling: Codex · Tongyi Lingma · DeepSeek · CodeBuddy · Marvis
 
-**Current Focus**  
-Python-based AI Agent systems · LLM tooling · Engineering automation
+### 🎯 Current Focus
+
+Python-based AI Agent systems and LLM tooling, with an emphasis on prompt engineering, flow design, API design, logic design, boundary definition, and validation before integration.
 
 ### ⚠️ Disclaimer
 
@@ -157,43 +145,30 @@ Most repositories are private due to work and personal reasons. This profile mai
 
 ### 👨‍💻 关于我
 
-自 2016 年入行，拥有多年后端开发与系统建设经验。早期从事 Web 与内容平台项目开发，随后负责游戏后台、游戏服务端与游戏前端开发，积累了后端、前端与系统集成方面的广泛经验。之后作为后端主程参与金融拍卖交易系统，负责需求分析、接口设计与 Mock、并发安全与支付一致性。曾任 **开发负责人**，主导 **智慧城市**、**物联网** 与 **数字化运营平台** 建设，覆盖智慧物业、工单系统、医疗行业后勤与硬件告警等场景。近期参与广告系统研发，主要负责需求落地、日志驱动的问题定位与线上修复。
+自 2016 年入行，专注后端系统架构与端到端交付。经历覆盖金融科技平台、企业运营系统、物联网集成与业务应用，涉及架构设计、接口设计、并发处理、性能优化与线上问题排查。曾任 **开发负责人**，具备项目排期、架构评审与复杂系统交付经验。
 
-熟悉 **微信生态**：公众号、小程序、开源二开与 WordPress 部署。具体涵盖地图服务接入、位置实时定位、电子围栏与越界报警；工单生成、超时与闭单的微信消息提醒；媒体水印与附件上传；异常工单的人工介入与自动完单闭环处理。同时熟悉数据库恢复与 Linux 服务器应急改码。曾从 0 到 1 搭建 **Yaf 项目基础架构**，集成常用组件与工具链，并沉淀为可复用工程模板。硬件告警链路通过 **MQTT** 与 **Socket.IO** 实现实时通信，移动端基于 React 集成 **Workerman** 完成实时交互。
+熟悉 **PHP 生态**、**Node.js**、**Python**、**MySQL / Redis / RabbitMQ**、**MQTT / Socket.IO / Workerman** 及 **React** 移动端与 Web 开发。擅长搭建可复用工程基础架构、集成实时链路，并使用 **Python**、**Shell**、**PowerShell**、**BAT** 完成流程自动化。
+
+### 🧩 工程经历
+
+**Yaf Foundation**  
+从 0 到 1 搭建可复用 PHP 应用基础架构，集成常用组件、工具链与工程约定，沉淀为统一项目模板。  
+`PHP` · `Yaf` · `Redis` · `MySQL`
+
+**IoT & Realtime Systems**  
+设计实时事件与告警链路，包含 MQTT 接入、消息中间件、Socket.IO 推送与 Workerman 实时交互。  
+`MQTT` · `Socket.IO` · `Workerman` · `React`
+
+**Enterprise & Digital Platforms**  
+覆盖金融科技平台、企业运营系统与业务应用，负责架构设计、接口设计、性能优化与生产交付。  
+`Laravel` · `Yaf` · `MySQL` · `Redis`
 
 ### 🎯 核心优势
 
 - 🏗️ **系统架构与高并发**：使用 RabbitMQ、分布式锁、Redis 缓存设计异步任务链路，应对高流量并保证数据一致性。
-- 📦 **端到端交付与项目管理**：曾任 **开发负责人**，具备项目管理与架构评审经验，从需求到上线交付复杂系统。
-- ⚡ **性能优化**：在 **智慧城市 / 物业 / CRM 项目** 中，核心接口响应时间从 **600ms 优化至 200ms**，数据异常率控制在 **0.1% 以下**，提升系统吞吐量。
-- 🤖 **AI 辅助开发**：我把 AI 当作提效工具。工作涵盖 **提示词工程**，包括需求拆解、**流程设计**、**接口设计**、**逻辑设计**、边界设定与防幻觉处理。AI 生成的代码会经过多轮优化，以及严格的 **逻辑验证、边界验证与性能验证** 后再集成。
+- 📦 **端到端交付**：曾任 **开发负责人**，具备项目排期、架构评审与复杂系统从需求到上线的交付经验。
+- ⚡ **性能优化**：核心接口响应时间从 **600ms 优化至 200ms**，数据异常率控制在 **0.1% 以下**，提升系统吞吐量。
 - ⚙️ **自动化与脚本**：具备 **Python**、**BAT**、**PowerShell**、**Shell** 脚本实践经验，用于部署、监控与流程自动化。
-- 🧰 **跨栈工程能力**：实际使用 **PHP**、**Node.js**、**Python**、**SQL**、**React**、**Docker**、**Jenkins** 等技术栈，根据项目需求完成系统建设。
-- 🗄️ **数据库**：熟悉 **MySQL** 与 **Redis**，具备库表设计、索引优化与查询调优经验；了解 **SQLite** 与 **MongoDB**。
-- 💬 **微信与开放平台**：公众号、小程序、开源二开、WordPress 部署、地图服务、电子围栏、工单消息通知、媒体处理与异常闭环处理。
-- 🧱 **Yaf 框架**：从 0 到 1 搭建可复用 **Yaf** 基础架构，集成常用组件与工具链。
-
-### 🚀 精选项目
-
-**Yaf Foundation**  
-可复用 PHP 项目基础架构，内置常用组件、工具链集成与约定优于配置的设计。  
-`PHP` · `Yaf` · `Redis` · `MySQL`  
-*私有项目 —— 架构与实现经验。*
-
-**IoT Alert Pipeline**  
-实时硬件告警链路，包含 MQTT 接入、Socket.IO 推送与 React 移动端集成。  
-`MQTT` · `Socket.IO` · `Workerman` · `React`  
-*私有项目 —— 架构与实现经验。*
-
-**Digital Operations Platform**  
-数字化工作流平台，覆盖工单生命周期、位置服务、实时告警与异常处理。  
-`Laravel` · `Yaf` · `MySQL` · `Redis`  
-*私有项目 —— 架构与实现经验。*
-
-**AI Engineering Lab — 探索中**  
-围绕 Python AI Agent、LLM 工具链与 AI 辅助研发流程进行持续探索。  
-`Python` · `LLM` · `AI Agent`  
-*持续探索中。*
 
 ### 🧭 架构
 
@@ -269,8 +244,9 @@ Realtime Gateway
 AI Agents · LLM Tooling · AI 辅助开发  
 日常工具：Codex · 通义灵码 · DeepSeek · CodeBuddy · Marvis
 
-**当前方向**  
-基于 Python 的 AI Agent 系统 · LLM 工具链 · 工程自动化
+### 🎯 当前方向
+
+基于 Python 的 AI Agent 系统与 LLM 工具链，重点在提示词工程、流程设计、接口设计、逻辑设计、边界设定，以及集成前的验证与优化。
 
 ### ⚠️ 免责声明
 
