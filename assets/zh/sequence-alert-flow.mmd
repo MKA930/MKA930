@@ -1,0 +1,88 @@
+sequenceDiagram
+    participant DEV as 物联网设备
+    participant GW as 边缘网关
+    participant MQTT as MQTT Broker
+    participant MQ as 消息队列
+    participant WORKER as 消费 Worker
+    participant API as 后端 API
+    participant REDIS as Redis
+    participant MYSQL as MySQL
+    participant PUSH as Socket.IO 网关
+    participant CLIENT as 客户端
+
+    DEV->>GW: 传感器数据 / 告警（MQTT over TLS）
+    activate GW
+    GW->>GW: 心跳检测
+    GW->>MQTT: 发布到主题
+    deactivate GW
+
+    activate MQTT
+    MQTT->>MQTT: QoS 1 投递
+    MQTT->>MQ: 流式事件
+    deactivate MQTT
+
+    activate MQ
+    MQ->>WORKER: 批量消费
+    deactivate MQ
+
+    activate WORKER
+    WORKER->>WORKER: 幂等校验
+    WORKER->>REDIS: 获取分布式锁
+    activate REDIS
+    REDIS-->>WORKER: 锁获取成功
+    deactivate REDIS
+
+    WORKER->>MYSQL: 写入告警记录
+    activate MYSQL
+    MYSQL-->>WORKER: 写入成功
+    deactivate MYSQL
+
+    WORKER->>API: POST /internal/alert
+    activate API
+    API->>API: 校验与补全
+
+    API->>MYSQL: 创建工单
+    activate MYSQL
+    MYSQL-->>API: 工单已创建
+    deactivate MYSQL
+
+    API->>REDIS: 发布事件（PubSub）
+    activate REDIS
+    REDIS-->>API: 发布成功
+    deactivate REDIS
+
+    API->>PUSH: 推送通知
+    activate PUSH
+    PUSH->>CLIENT: Socket.IO 事件
+    activate CLIENT
+    CLIENT-->>PUSH: ACK
+    deactivate CLIENT
+    deactivate PUSH
+
+    API-->>WORKER: 201 Created
+    deactivate API
+
+    WORKER->>REDIS: 释放锁
+    activate REDIS
+    REDIS-->>WORKER: 已释放
+    deactivate REDIS
+
+    WORKER->>MQ: ACK 消息
+    deactivate WORKER
+
+    Note over DEV,CLIENT: 若 Worker 处理失败，消息进入死信队列并按退避策略重试
+
+    CLIENT->>API: 更新工单状态
+    activate API
+    API->>MYSQL: 更新状态
+    activate MYSQL
+    MYSQL-->>API: 更新成功
+    deactivate MYSQL
+    API->>REDIS: 失效缓存
+    activate REDIS
+    REDIS-->>API: 缓存已清除
+    deactivate REDIS
+    API-->>CLIENT: 200 OK
+    deactivate API
+
+    Note over DEV,CLIENT: 工单生命周期：创建 → 派单 → 处理中 → 已解决 → 已关闭

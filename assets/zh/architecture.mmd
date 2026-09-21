@@ -1,0 +1,84 @@
+graph TB
+    subgraph EDGE["边缘层"]
+        DEV["物联网传感器 / 设备"]
+        GW["边缘网关<br/>心跳与重连"]
+    end
+
+    subgraph INGEST["接入层"]
+        MQTT["MQTT Broker<br/>QoS 1 / 会话持久化"]
+        PROV["设备注册<br/>认证与注册表"]
+    end
+
+    subgraph ASYNC["异步处理层"]
+        MQ["消息队列<br/>RabbitMQ / Kafka"]
+        DLQ["死信队列<br/>重试与错误处理"]
+        WORKER["消费 Worker<br/>幂等处理"]
+    end
+
+    subgraph BACKEND["后端服务层"]
+        API["API 网关<br/>认证 / 限流"]
+        SVC_REALTIME["实时服务<br/>告警与事件"]
+        SVC_WORKORDER["工单服务<br/>生命周期与状态"]
+        SVC_USER["用户与权限<br/>RBAC"]
+        SVC_FOUNDATION["Yaf 基础架构<br/>共享组件"]
+    end
+
+    subgraph DATA["数据层"]
+        REDIS["Redis<br/>缓存 / 分布式锁 / PubSub"]
+        MYSQL["MySQL<br/>主库 + 只读副本"]
+        TSDB["时序数据库<br/>指标与遥测"]
+    end
+
+    subgraph PUSH["推送层"]
+        SOCKET["Socket.IO 网关<br/>WebSocket / 自动降级"]
+        WORKERMAN["Workerman<br/>连接池"]
+    end
+
+    subgraph CLIENT["客户端"]
+        WEB["React Web / 移动端"]
+        WECHAT["微信小程序"]
+        OPS["运维看板"]
+    end
+
+    DEV -->|"MQTT over TLS"| GW
+    GW -->|"MQTT 发布"| MQTT
+    MQTT -->|"流式投递"| MQ
+    MQTT -.->|"认证"| PROV
+    MQ -->|"消费"| WORKER
+    WORKER -->|"重试"| DLQ
+    DLQ -.->|"重放"| MQ
+
+    WORKER -->|"告警事件"| SVC_REALTIME
+    WORKER -->|"工单"| SVC_WORKORDER
+    WORKER -->|"指标"| TSDB
+
+    API --> SVC_REALTIME
+    API --> SVC_WORKORDER
+    API --> SVC_USER
+    SVC_FOUNDATION -.->|"共享"| SVC_REALTIME
+    SVC_FOUNDATION -.->|"共享"| SVC_WORKORDER
+    SVC_FOUNDATION -.->|"共享"| SVC_USER
+
+    SVC_REALTIME -->|"缓存 / 锁"| REDIS
+    SVC_WORKORDER -->|"持久化"| MYSQL
+    SVC_WORKORDER -->|"事件"| REDIS
+    SVC_USER -->|"读取"| MYSQL
+
+    SVC_REALTIME -->|"推送"| SOCKET
+    SOCKET -->|"连接"| WORKERMAN
+    WORKERMAN -->|"消息"| WEB
+    WORKERMAN -->|"消息"| WECHAT
+    WORKERMAN -->|"消息"| OPS
+
+    REDIS -.->|"PubSub"| SOCKET
+
+    style DEV fill:#1a1a2e,stroke:#e94560,stroke-width:2px,color:#fff
+    style GW fill:#1a1a2e,stroke:#e94560,stroke-width:2px,color:#fff
+    style MQTT fill:#16213e,stroke:#0f3460,stroke-width:2px,color:#fff
+    style MQ fill:#533483,stroke:#e94560,stroke-width:2px,color:#fff
+    style SVC_REALTIME fill:#0f3460,stroke:#e94560,stroke-width:2px,color:#fff
+    style SVC_WORKORDER fill:#0f3460,stroke:#e94560,stroke-width:2px,color:#fff
+    style SVC_FOUNDATION fill:#2d4059,stroke:#e94560,stroke-width:2px,color:#fff
+    style REDIS fill:#c0392b,stroke:#e74c3c,stroke-width:2px,color:#fff
+    style MYSQL fill:#2471a3,stroke:#3498db,stroke-width:2px,color:#fff
+    style SOCKET fill:#1e8449,stroke:#27ae60,stroke-width:2px,color:#fff

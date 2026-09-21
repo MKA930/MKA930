@@ -3,7 +3,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=MKA930&fontSize=42&fontColor=ffffff&animation=twinkling&fontAlignY=32" width="100%" />
 
 <a href="https://github.com/MKA930">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=800&color=36BCF7&center=true&vCenter=true&width=700&lines=Backend+%26+Systems+Engineer;High-Concurrency+%C2%B7+Realtime+%C2%B7+Architecture;End-to-End+Delivery+%C2%B7+Automation;Building+Agent+Applications" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=800&color=36BCF7&center=true&vCenter=true&width=700&lines=Backend+%26+Systems+Engineer;High-Concurrency+%C2%B7+Realtime+%C2%B7+Architecture;End-to-End+Delivery+%C2%B7+Automation;Exploring+Agent+Applications" />
 </a>
 
 <br>
@@ -29,7 +29,33 @@ Backend & Systems Engineer since 2016, focused on architecture, high-concurrency
 
 Former **development lead**, responsible for project scheduling, architecture reviews, and delivering complex systems from requirements to production.
 
-Core strengths lie in designing reliable realtime data pipelines, handling high traffic with messaging and caching, and driving systems from concept to stable online operation. Currently focused on **building and iterating Agent applications**, with emphasis on practical integration into existing backend systems.
+Core strengths lie in designing reliable realtime data pipelines, handling high traffic with messaging and caching, and driving systems from concept to stable online operation. Currently exploring **Agent application development**, with emphasis on practical integration into existing backend systems.
+
+### 📊 GitHub Activity
+
+<div align="center">
+
+[![GitHub Stats Terminal](https://github-stats-terminal-style-five.vercel.app/api/stats?username=MKA930&theme=tokyonight)](https://github.com/MKA930)
+
+<br>
+
+![GitHub Stats](https://gitcard-studio.creativecode.com.co/api/stats?username=MKA930&theme=dark)
+
+</div>
+
+### 🌌 Galaxy Profile
+
+<div align="center">
+
+![Galaxy Header](https://raw.githubusercontent.com/MKA930/galaxy-profile/main/assets/generated/galaxy-header.svg)
+
+![Stats](https://raw.githubusercontent.com/MKA930/galaxy-profile/main/assets/generated/stats-card.svg)
+
+![Tech Stack](https://raw.githubusercontent.com/MKA930/galaxy-profile/main/assets/generated/tech-stack.svg)
+
+![Projects](https://raw.githubusercontent.com/MKA930/galaxy-profile/main/assets/generated/projects-constellation.svg)
+
+</div>
 
 ### 🧩 Engineering Experience
 
@@ -61,30 +87,25 @@ Worked across fintech and enterprise operation systems, owning architecture desi
 
 ### 🧭 Architecture
 
-Representative pattern from realtime IoT and digital operation platforms. Designed for unreliable device networks, traffic bursts, and the need for both realtime push and reliable backend processing.
+Production-grade composite architecture covering edge ingestion, async processing, backend services, and realtime push.
 
-```text
-IoT Devices / Sensors
-        │
-       MQTT
-        │
-   Message Broker
-        │
-  Backend Services
-    │       │
-    │       ├── Redis
-    │       │
-    │       └── MySQL
-    │
-    ▼
-Realtime Gateway
-        │
-     Socket.IO
-        │
-   React / Mobile
-```
+![Architecture](assets/en/architecture.svg)
 
-Key considerations: connection management under unstable networks, peak shaving via messaging, separation of realtime push and core business processing, and consistency guarantees under concurrent updates.
+**Design considerations:**
+- Edge layer handles unreliable networks with heartbeat, reconnection, and offline buffering
+- MQTT ingestion with QoS 1 and session persistence ensures at-least-once delivery
+- Message queue decouples ingestion from processing, providing peak shaving and backpressure
+- Dead letter queue with exponential backoff handles transient failures
+- Distributed locks guarantee idempotent processing under concurrent consumption
+- Redis PubSub bridges backend events to the realtime gateway
+- Socket.IO + Workerman maintains persistent connections with automatic fallback
+- Yaf foundation provides shared components across all backend services
+
+### 📡 Alert Flow Sequence
+
+End-to-end sequence from device ingestion to work order closure.
+
+![Sequence](assets/en/sequence-alert-flow.svg)
 
 ### 🛠 Tech Stack
 
@@ -132,16 +153,24 @@ Key considerations: connection management under unstable networks, peak shaving 
 ![WordPress](https://img.shields.io/badge/WordPress-21759B?style=flat-square&logo=wordpress&logoColor=white)
 
 **Agent & AI Application**  
-Focusing on practical Agent application development and integration with backend systems.  
+Exploring practical Agent application development and integration with backend systems.  
 Current tooling: Codex · Tongyi Lingma · DeepSeek · CodeBuddy · Marvis
+
+### 🐍 Contribution Snake
+
+<div align="center">
+
+![Snake](https://raw.githubusercontent.com/MKA930/MKA930/output/github-contribution-grid-snake.svg)
+
+</div>
 
 ### 🎯 Current Focus
 
-Building and iterating on **Agent applications**, with emphasis on tool calling, multi-step flow design, state management, boundary definition, and reliable integration with existing backend services. Exploring how Agent capabilities can enhance realtime systems and enterprise workflows.
+Exploring **Agent application development**, with emphasis on tool calling, multi-step flow design, state management, boundary definition, and reliable integration with existing backend services.
 
 ### ⚠️ Disclaimer
 
-Most repositories are private due to work and personal reasons. This profile mainly records technical direction, system experience, and ongoing work on Agent applications.
+Most repositories are private due to work and personal reasons. This profile mainly records technical direction, system experience, and ongoing exploration of Agent applications.
 
 ---
 
@@ -160,7 +189,33 @@ Most repositories are private due to work and personal reasons. This profile mai
 
 曾任 **开发负责人**，负责项目排期、架构评审，以及复杂系统从需求到上线的完整交付。
 
-核心能力在于设计可靠的实时数据链路、用消息队列与缓存应对高流量，并把系统从方案推进到稳定运行。当前重点在 **Agent 应用的落地与迭代**，关注如何与现有后端系统有效结合。
+核心能力在于设计可靠的实时数据链路、用消息队列与缓存应对高流量，并把系统从方案推进到稳定运行。当前正在探索 **Agent 应用的落地方式**，关注如何与现有后端系统有效结合。
+
+### 📊 GitHub 动态
+
+<div align="center">
+
+[![GitHub Stats Terminal](https://github-stats-terminal-style-five.vercel.app/api/stats?username=MKA930&theme=tokyonight)](https://github.com/MKA930)
+
+<br>
+
+![GitHub Stats](https://gitcard-studio.creativecode.com.co/api/stats?username=MKA930&theme=dark)
+
+</div>
+
+### 🌌 银河横幅
+
+<div align="center">
+
+![Galaxy Header](https://raw.githubusercontent.com/MKA930/galaxy-profile/main/assets/generated/galaxy-header.svg)
+
+![Stats](https://raw.githubusercontent.com/MKA930/galaxy-profile/main/assets/generated/stats-card.svg)
+
+![Tech Stack](https://raw.githubusercontent.com/MKA930/galaxy-profile/main/assets/generated/tech-stack.svg)
+
+![Projects](https://raw.githubusercontent.com/MKA930/galaxy-profile/main/assets/generated/projects-constellation.svg)
+
+</div>
 
 ### 🧩 工程经历
 
@@ -192,30 +247,25 @@ Most repositories are private due to work and personal reasons. This profile mai
 
 ### 🧭 架构
 
-来自实时物联网与数字化运营平台的代表性架构。针对设备网络不可靠、流量突发、既要实时推送又要可靠业务处理的场景设计。
+覆盖边缘接入、异步处理、后端服务与实时推送的生产级复合架构。
 
-```text
-IoT Devices / Sensors
-        │
-       MQTT
-        │
-   Message Broker
-        │
-  Backend Services
-    │       │
-    │       ├── Redis
-    │       │
-    │       └── MySQL
-    │
-    ▼
-Realtime Gateway
-        │
-     Socket.IO
-        │
-   React / Mobile
-```
+![Architecture](assets/zh/architecture.svg)
 
-关键考量：不稳定网络下的连接管理、消息削峰、实时推送与核心业务处理的分离、并发更新下的一致性保障。
+**设计考量：**
+- 边缘层通过心跳、重连与离线缓存应对不稳定网络
+- MQTT 接入采用 QoS 1 与会话持久化，保证至少一次投递
+- 消息队列解耦接入与处理，提供削峰与背压能力
+- 死信队列配合指数退避处理瞬时失败
+- 分布式锁保证并发消费下的幂等处理
+- Redis PubSub 桥接后端事件与实时网关
+- Socket.IO + Workerman 维持长连接并支持自动降级
+- Yaf 基础架构为所有后端服务提供共享组件
+
+### 📡 告警链路时序
+
+从设备上报到工单闭环的完整时序。
+
+![Sequence](assets/zh/sequence-alert-flow.svg)
 
 ### 🛠 技术栈
 
@@ -263,16 +313,24 @@ Realtime Gateway
 ![WordPress](https://img.shields.io/badge/WordPress-21759B?style=flat-square&logo=wordpress&logoColor=white)
 
 **Agent 与 AI 应用**  
-聚焦 Agent 应用的实际落地，以及与后端系统的结合。  
+探索 Agent 应用的实际落地，以及与后端系统的结合。  
 当前工具：Codex · 通义灵码 · DeepSeek · CodeBuddy · Marvis
+
+### 🐍 贡献贪吃蛇
+
+<div align="center">
+
+![Snake](https://raw.githubusercontent.com/MKA930/MKA930/output/github-contribution-grid-snake.svg)
+
+</div>
 
 ### 🎯 当前方向
 
-正在推进 **Agent 应用的落地与迭代**，重点关注工具调用、多步骤流程设计、状态管理、边界定义，以及与现有后端服务的可靠集成。探索如何将 Agent 能力用于增强实时系统与企业工作流。
+正在探索 **Agent 应用的落地方式**，重点关注工具调用、多步骤流程设计、状态管理、边界定义，以及与现有后端服务的可靠集成。
 
 ### ⚠️ 免责声明
 
-由于工作与个人原因，大部分仓库为私有。本主页主要用于记录技术方向、系统经验，以及 Agent 应用的实践进展。
+由于工作与个人原因，大部分仓库为私有。本主页主要用于记录技术方向、系统经验，以及 Agent 应用的探索进展。
 
 </details>
 

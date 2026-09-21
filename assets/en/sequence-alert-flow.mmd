@@ -1,0 +1,88 @@
+sequenceDiagram
+    participant DEV as IoT Device
+    participant GW as Edge Gateway
+    participant MQTT as MQTT Broker
+    participant MQ as Message Queue
+    participant WORKER as Consumer Worker
+    participant API as Backend API
+    participant REDIS as Redis
+    participant MYSQL as MySQL
+    participant PUSH as Socket.IO Gateway
+    participant CLIENT as Client App
+
+    DEV->>GW: Sensor data / Alert (MQTT over TLS)
+    activate GW
+    GW->>GW: Heartbeat check
+    GW->>MQTT: Publish to topic
+    deactivate GW
+
+    activate MQTT
+    MQTT->>MQTT: QoS 1 delivery
+    MQTT->>MQ: Stream event
+    deactivate MQTT
+
+    activate MQ
+    MQ->>WORKER: Consume batch
+    deactivate MQ
+
+    activate WORKER
+    WORKER->>WORKER: Idempotency check
+    WORKER->>REDIS: Acquire distributed lock
+    activate REDIS
+    REDIS-->>WORKER: Lock acquired
+    deactivate REDIS
+
+    WORKER->>MYSQL: Insert alert record
+    activate MYSQL
+    MYSQL-->>WORKER: OK
+    deactivate MYSQL
+
+    WORKER->>API: POST /internal/alert
+    activate API
+    API->>API: Validate & enrich
+
+    API->>MYSQL: Create work order
+    activate MYSQL
+    MYSQL-->>API: Work order created
+    deactivate MYSQL
+
+    API->>REDIS: Publish event (PubSub)
+    activate REDIS
+    REDIS-->>API: Published
+    deactivate REDIS
+
+    API->>PUSH: Push notification
+    activate PUSH
+    PUSH->>CLIENT: Socket.IO event
+    activate CLIENT
+    CLIENT-->>PUSH: ACK
+    deactivate CLIENT
+    deactivate PUSH
+
+    API-->>WORKER: 201 Created
+    deactivate API
+
+    WORKER->>REDIS: Release lock
+    activate REDIS
+    REDIS-->>WORKER: Released
+    deactivate REDIS
+
+    WORKER->>MQ: ACK message
+    deactivate WORKER
+
+    Note over DEV,CLIENT: If worker fails, message goes to Dead Letter Queue and retries with backoff
+
+    CLIENT->>API: Update work order status
+    activate API
+    API->>MYSQL: Update status
+    activate MYSQL
+    MYSQL-->>API: OK
+    deactivate MYSQL
+    API->>REDIS: Invalidate cache
+    activate REDIS
+    REDIS-->>API: Cache cleared
+    deactivate REDIS
+    API-->>CLIENT: 200 OK
+    deactivate API
+
+    Note over DEV,CLIENT: Work order lifecycle: Created → Assigned → In Progress → Resolved → Closed

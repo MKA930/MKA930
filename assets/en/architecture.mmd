@@ -1,0 +1,84 @@
+graph TB
+    subgraph EDGE["Edge Layer"]
+        DEV["IoT Sensors / Devices"]
+        GW["Edge Gateway<br/>Heartbeat & Reconnection"]
+    end
+
+    subgraph INGEST["Ingestion"]
+        MQTT["MQTT Broker<br/>QoS 1 / Session Persist"]
+        PROV["Device Provisioning<br/>Auth & Registry"]
+    end
+
+    subgraph ASYNC["Async Processing"]
+        MQ["Message Queue<br/>RabbitMQ / Kafka"]
+        DLQ["Dead Letter Queue<br/>Retry & Error Handling"]
+        WORKER["Consumer Workers<br/>Idempotent Processing"]
+    end
+
+    subgraph BACKEND["Backend Services"]
+        API["API Gateway<br/>Auth / Rate Limit"]
+        SVC_REALTIME["Realtime Service<br/>Alert & Event"]
+        SVC_WORKORDER["Work Order Service<br/>Lifecycle & State"]
+        SVC_USER["User & Permission<br/>RBAC"]
+        SVC_FOUNDATION["Yaf Foundation<br/>Shared Components"]
+    end
+
+    subgraph DATA["Data Layer"]
+        REDIS["Redis<br/>Cache / Dist Lock / PubSub"]
+        MYSQL["MySQL<br/>Primary + Read Replica"]
+        TSDB["Time Series DB<br/>Metrics & Telemetry"]
+    end
+
+    subgraph PUSH["Realtime Push"]
+        SOCKET["Socket.IO Gateway<br/>WebSocket / Fallback"]
+        WORKERMAN["Workerman<br/>Connection Pool"]
+    end
+
+    subgraph CLIENT["Client"]
+        WEB["React Web / Mobile"]
+        WECHAT["WeChat Mini Program"]
+        OPS["Ops Dashboard"]
+    end
+
+    DEV -->|"MQTT over TLS"| GW
+    GW -->|"MQTT Publish"| MQTT
+    MQTT -->|"Stream"| MQ
+    MQTT -.->|"Auth"| PROV
+    MQ -->|"Consume"| WORKER
+    WORKER -->|"Retry"| DLQ
+    DLQ -.->|"Replay"| MQ
+
+    WORKER -->|"Alert Event"| SVC_REALTIME
+    WORKER -->|"Work Order"| SVC_WORKORDER
+    WORKER -->|"Metrics"| TSDB
+
+    API --> SVC_REALTIME
+    API --> SVC_WORKORDER
+    API --> SVC_USER
+    SVC_FOUNDATION -.->|"Shared"| SVC_REALTIME
+    SVC_FOUNDATION -.->|"Shared"| SVC_WORKORDER
+    SVC_FOUNDATION -.->|"Shared"| SVC_USER
+
+    SVC_REALTIME -->|"Cache / Lock"| REDIS
+    SVC_WORKORDER -->|"Persist"| MYSQL
+    SVC_WORKORDER -->|"Event"| REDIS
+    SVC_USER -->|"Read"| MYSQL
+
+    SVC_REALTIME -->|"Push"| SOCKET
+    SOCKET -->|"Connect"| WORKERMAN
+    WORKERMAN -->|"Message"| WEB
+    WORKERMAN -->|"Message"| WECHAT
+    WORKERMAN -->|"Message"| OPS
+
+    REDIS -.->|"PubSub"| SOCKET
+
+    style DEV fill:#1a1a2e,stroke:#e94560,stroke-width:2px,color:#fff
+    style GW fill:#1a1a2e,stroke:#e94560,stroke-width:2px,color:#fff
+    style MQTT fill:#16213e,stroke:#0f3460,stroke-width:2px,color:#fff
+    style MQ fill:#533483,stroke:#e94560,stroke-width:2px,color:#fff
+    style SVC_REALTIME fill:#0f3460,stroke:#e94560,stroke-width:2px,color:#fff
+    style SVC_WORKORDER fill:#0f3460,stroke:#e94560,stroke-width:2px,color:#fff
+    style SVC_FOUNDATION fill:#2d4059,stroke:#e94560,stroke-width:2px,color:#fff
+    style REDIS fill:#c0392b,stroke:#e74c3c,stroke-width:2px,color:#fff
+    style MYSQL fill:#2471a3,stroke:#3498db,stroke-width:2px,color:#fff
+    style SOCKET fill:#1e8449,stroke:#27ae60,stroke-width:2px,color:#fff
