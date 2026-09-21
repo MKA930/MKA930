@@ -3,7 +3,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=MKA930&fontSize=42&fontColor=ffffff&animation=twinkling&fontAlignY=32" width="100%" />
 
 <a href="https://github.com/MKA930">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=800&color=36BCF7&center=true&vCenter=true&width=700&lines=Backend+%26+Systems+Engineer;Architecture+%C2%B7+IoT+%C2%B7+Digital+Platforms;End-to-End+Delivery+%C2%B7+Automation;AI-Assisted+Engineering" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=800&color=36BCF7&center=true&vCenter=true&width=700&lines=Backend+%26+Systems+Engineer;High-Concurrency+%C2%B7+Realtime+%C2%B7+Architecture;End-to-End+Delivery+%C2%B7+Automation;Building+Agent+Applications" />
 </a>
 
 <br>
@@ -25,34 +25,43 @@
 
 ### 👨‍💻 About Me
 
-Backend engineer since 2016, focused on system architecture and end-to-end delivery. Worked across fintech platforms, enterprise operations systems, IoT integrations, and business applications, covering architecture design, API design, concurrency, performance optimization, and production troubleshooting. Former **development lead**, with experience in project scheduling, architecture review, and delivering complex systems from requirement to production.
+Backend & Systems Engineer since 2016, focused on architecture, high-concurrency systems, and end-to-end delivery. Experience spans fintech platforms, enterprise operations systems, IoT realtime pipelines, and business applications — covering architecture design, API design, concurrency control, performance optimization, and production troubleshooting.
 
-Hands-on with **PHP ecosystems**, **Node.js**, **Python**, **MySQL / Redis / RabbitMQ**, **MQTT / Socket.IO / Workerman**, and **React** for mobile and web. I also build reusable engineering foundations, integrate realtime pipelines, and automate workflows with **Python**, **Shell**, **PowerShell**, and **BAT**.
+Former **development lead**, responsible for project scheduling, architecture reviews, and delivering complex systems from requirements to production.
+
+Core strengths lie in designing reliable realtime data pipelines, handling high traffic with messaging and caching, and driving systems from concept to stable online operation. Currently focused on **building and iterating Agent applications**, with emphasis on practical integration into existing backend systems.
 
 ### 🧩 Engineering Experience
 
-**Yaf Foundation**  
-Built a reusable PHP application foundation from scratch, integrating common components, tooling, and engineering conventions into a single project template.  
+**Reusable Foundation (Yaf-based)**  
+Built a complete application foundation from scratch to standardize engineering practices across projects. Unified common components, development conventions, tooling, and infrastructure patterns into a single reusable template, reducing repetitive setup and improving consistency across teams.  
 `PHP` · `Yaf` · `Redis` · `MySQL`
 
 **IoT & Realtime Systems**  
-Designed realtime event and alert pipelines using MQTT ingestion, message brokers, Socket.IO push, and Workerman for realtime interaction.  
-`MQTT` · `Socket.IO` · `Workerman` · `React`
+Designed and implemented realtime event and alert pipelines under unreliable network conditions and high device concurrency. Key work included MQTT-based data ingestion, message queue peak shaving, connection lifecycle management (heartbeat, reconnection), and low-latency push via Socket.IO + Workerman. Focused on balancing realtime requirements with system stability and data consistency.  
+`MQTT` · `Socket.IO` · `Workerman` · `Redis` · `RabbitMQ` · `React`
 
 **Enterprise & Digital Platforms**  
-Worked across fintech platforms, enterprise operations systems, and business applications, covering architecture, API design, performance optimization, and production delivery.  
-`Laravel` · `Yaf` · `MySQL` · `Redis`
+Worked across fintech and enterprise operation systems, owning architecture design, API specifications, performance tuning, and full delivery lifecycle. Designed async processing flows with message queues and distributed locks to handle traffic spikes while maintaining data consistency. Delivered multiple complex systems from requirement clarification through production launch and post-launch support.  
+`Laravel` · `Yaf` · `MySQL` · `Redis` · `RabbitMQ`
 
 ### 🎯 Core Strengths
 
-- 🏗️ **System Architecture & High-Concurrency**: Designed async pipelines with RabbitMQ, distributed locks, and Redis caching to handle high traffic and ensure data consistency.
-- 📦 **End-to-End Delivery**: Former **development lead**; managed schedules, conducted architecture reviews, and delivered complex systems from requirement to production.
-- ⚡ **Performance Optimization**: Optimized core API latency by approximately **3×**, improving throughput and stability under high concurrency.
-- ⚙️ **Automation & Scripting**: Hands-on experience with **Python**, **BAT**, **PowerShell**, and **Shell** for deployment, monitoring, and workflow automation.
+- 🏗️ **System Architecture & High-Concurrency**  
+  Designed async pipelines using message queues, distributed locks, and multi-level caching to handle high traffic while ensuring data consistency and system stability.
+
+- 📦 **End-to-End Delivery**  
+  Former development lead. Managed scheduling, conducted architecture reviews, coordinated cross-team delivery, and took complex systems from requirements all the way to stable production.
+
+- ⚡ **Performance Optimization**  
+  Optimized core API latency by approximately **3×** through targeted caching strategies, query optimization, and asynchronous processing, significantly improving throughput under concurrent load.
+
+- ⚙️ **Automation & Engineering Efficiency**  
+  Practical experience with scripting (Python, Shell, PowerShell, BAT) for deployment, monitoring, and workflow automation. Built reusable foundations to reduce repetitive engineering work.
 
 ### 🧭 Architecture
 
-Representative architecture pattern from realtime IoT and digital operation platforms.
+Representative pattern from realtime IoT and digital operation platforms. Designed for unreliable device networks, traffic bursts, and the need for both realtime push and reliable backend processing.
 
 ```text
 IoT Devices / Sensors
@@ -74,6 +83,8 @@ Realtime Gateway
         │
    React / Mobile
 ```
+
+Key considerations: connection management under unstable networks, peak shaving via messaging, separation of realtime push and core business processing, and consistency guarantees under concurrent updates.
 
 ### 🛠 Tech Stack
 
@@ -120,17 +131,17 @@ Realtime Gateway
 ![WeChat](https://img.shields.io/badge/WeChat-07C160?style=flat-square&logo=wechat&logoColor=white)
 ![WordPress](https://img.shields.io/badge/WordPress-21759B?style=flat-square&logo=wordpress&logoColor=white)
 
-**AI Engineering**  
-AI Agents · LLM Tooling · AI-assisted Development  
-Daily tooling: Codex · Tongyi Lingma · DeepSeek · CodeBuddy · Marvis
+**Agent & AI Application**  
+Focusing on practical Agent application development and integration with backend systems.  
+Current tooling: Codex · Tongyi Lingma · DeepSeek · CodeBuddy · Marvis
 
 ### 🎯 Current Focus
 
-Python-based AI Agent systems and LLM tooling, with an emphasis on prompt engineering, flow design, API design, logic design, boundary definition, and validation before integration.
+Building and iterating on **Agent applications**, with emphasis on tool calling, multi-step flow design, state management, boundary definition, and reliable integration with existing backend services. Exploring how Agent capabilities can enhance realtime systems and enterprise workflows.
 
 ### ⚠️ Disclaimer
 
-Most repositories are private due to work and personal reasons. This profile mainly contains personal projects, experiments, and technical notes.
+Most repositories are private due to work and personal reasons. This profile mainly records technical direction, system experience, and ongoing work on Agent applications.
 
 ---
 
@@ -145,34 +156,43 @@ Most repositories are private due to work and personal reasons. This profile mai
 
 ### 👨‍💻 关于我
 
-自 2016 年入行，专注后端系统架构与端到端交付。经历覆盖金融科技平台、企业运营系统、物联网集成与业务应用，涉及架构设计、接口设计、并发处理、性能优化与线上问题排查。曾任 **开发负责人**，具备项目排期、架构评审与复杂系统交付经验。
+自 2016 年入行，专注后端系统架构、高并发与端到端交付。经历覆盖金融科技平台、企业运营系统、物联网实时链路与业务应用，涉及架构设计、接口设计、并发控制、性能优化与线上问题排查。
 
-熟悉 **PHP 生态**、**Node.js**、**Python**、**MySQL / Redis / RabbitMQ**、**MQTT / Socket.IO / Workerman** 及 **React** 移动端与 Web 开发。擅长搭建可复用工程基础架构、集成实时链路，并使用 **Python**、**Shell**、**PowerShell**、**BAT** 完成流程自动化。
+曾任 **开发负责人**，负责项目排期、架构评审，以及复杂系统从需求到上线的完整交付。
+
+核心能力在于设计可靠的实时数据链路、用消息队列与缓存应对高流量，并把系统从方案推进到稳定运行。当前重点在 **Agent 应用的落地与迭代**，关注如何与现有后端系统有效结合。
 
 ### 🧩 工程经历
 
-**Yaf Foundation**  
-从 0 到 1 搭建可复用 PHP 应用基础架构，集成常用组件、工具链与工程约定，沉淀为统一项目模板。  
+**可复用基础架构（基于 Yaf）**  
+从零搭建完整应用基础，统一工程规范、常用组件、工具链与基础设施模式，沉淀为可复用项目模板，减少重复建设，提升多项目一致性。  
 `PHP` · `Yaf` · `Redis` · `MySQL`
 
-**IoT & Realtime Systems**  
-设计实时事件与告警链路，包含 MQTT 接入、消息中间件、Socket.IO 推送与 Workerman 实时交互。  
-`MQTT` · `Socket.IO` · `Workerman` · `React`
+**物联网与实时系统**  
+在设备网络不稳定、连接数较高的前提下，设计并实现实时事件与告警链路。核心工作包括 MQTT 数据采集、消息队列削峰、连接生命周期管理（心跳、重连），以及基于 Socket.IO + Workerman 的低延迟推送。重点平衡实时性、系统稳定性与数据一致性。  
+`MQTT` · `Socket.IO` · `Workerman` · `Redis` · `RabbitMQ` · `React`
 
-**Enterprise & Digital Platforms**  
-覆盖金融科技平台、企业运营系统与业务应用，负责架构设计、接口设计、性能优化与生产交付。  
-`Laravel` · `Yaf` · `MySQL` · `Redis`
+**企业与数字化平台**  
+覆盖金融科技与企业运营系统，负责架构设计、接口规范、性能优化与完整交付。使用消息队列与分布式锁设计异步处理链路，应对流量高峰并保障数据一致性。主导多个复杂系统从需求澄清到上线及后续保障的全流程。  
+`Laravel` · `Yaf` · `MySQL` · `Redis` · `RabbitMQ`
 
 ### 🎯 核心优势
 
-- 🏗️ **系统架构与高并发**：使用 RabbitMQ、分布式锁、Redis 缓存设计异步任务链路，应对高流量并保证数据一致性。
-- 📦 **端到端交付**：曾任 **开发负责人**，具备项目排期、架构评审与复杂系统从需求到上线的交付经验。
-- ⚡ **性能优化**：核心接口响应时延优化约 **3 倍**，提升高并发场景下的系统吞吐量与稳定性。
-- ⚙️ **自动化与脚本**：具备 **Python**、**BAT**、**PowerShell**、**Shell** 脚本实践经验，用于部署、监控与流程自动化。
+- 🏗️ **系统架构与高并发**  
+  使用消息队列、分布式锁与多级缓存设计异步链路，在高流量下保障数据一致性与系统稳定。
+
+- 📦 **端到端交付**  
+  曾任开发负责人，负责排期、架构评审与跨团队协作，具备复杂系统从需求到稳定上线的完整交付经验。
+
+- ⚡ **性能优化**  
+  通过缓存策略、慢查询治理与异步化，将核心接口响应时延优化约 **3 倍**，显著提升高并发场景下的吞吐量与稳定性。
+
+- ⚙️ **自动化与工程效率**  
+  具备 Python、Shell、PowerShell、BAT 等脚本实践经验，用于部署、监控与流程自动化；通过可复用基础建设减少重复工程工作。
 
 ### 🧭 架构
 
-来自实时物联网与数字化运营平台的代表性架构模式。
+来自实时物联网与数字化运营平台的代表性架构。针对设备网络不可靠、流量突发、既要实时推送又要可靠业务处理的场景设计。
 
 ```text
 IoT Devices / Sensors
@@ -194,6 +214,8 @@ Realtime Gateway
         │
    React / Mobile
 ```
+
+关键考量：不稳定网络下的连接管理、消息削峰、实时推送与核心业务处理的分离、并发更新下的一致性保障。
 
 ### 🛠 技术栈
 
@@ -240,17 +262,17 @@ Realtime Gateway
 ![WeChat](https://img.shields.io/badge/WeChat-07C160?style=flat-square&logo=wechat&logoColor=white)
 ![WordPress](https://img.shields.io/badge/WordPress-21759B?style=flat-square&logo=wordpress&logoColor=white)
 
-**AI 工程**  
-AI Agents · LLM Tooling · AI 辅助开发  
-日常工具：Codex · 通义灵码 · DeepSeek · CodeBuddy · Marvis
+**Agent 与 AI 应用**  
+聚焦 Agent 应用的实际落地，以及与后端系统的结合。  
+当前工具：Codex · 通义灵码 · DeepSeek · CodeBuddy · Marvis
 
 ### 🎯 当前方向
 
-基于 Python 的 AI Agent 系统与 LLM 工具链，重点在提示词工程、流程设计、接口设计、逻辑设计、边界设定，以及集成前的验证与优化。
+正在推进 **Agent 应用的落地与迭代**，重点关注工具调用、多步骤流程设计、状态管理、边界定义，以及与现有后端服务的可靠集成。探索如何将 Agent 能力用于增强实时系统与企业工作流。
 
 ### ⚠️ 免责声明
 
-由于工作与个人原因，大部分仓库为私有项目。本主页主要用于记录个人项目、实验与技术笔记。
+由于工作与个人原因，大部分仓库为私有。本主页主要用于记录技术方向、系统经验，以及 Agent 应用的实践进展。
 
 </details>
 
