@@ -47,13 +47,13 @@ Core strengths lie in designing reliable realtime data pipelines, handling high 
 
 <div align="center">
 
-![Galaxy Header](https://raw.githubusercontent.com/MKA930/galaxy-profile/main/assets/generated/galaxy-header.svg)
+![Galaxy Header](https://raw.githubusercontent.com/MKA930/galaxy-profile/main/assets/generated/en/galaxy-header.svg)
 
-![Stats](https://raw.githubusercontent.com/MKA930/galaxy-profile/main/assets/generated/stats-card.svg)
+![Stats](https://raw.githubusercontent.com/MKA930/galaxy-profile/main/assets/generated/en/stats-card.svg)
 
-![Tech Stack](https://raw.githubusercontent.com/MKA930/galaxy-profile/main/assets/generated/tech-stack.svg)
+![Tech Stack](https://raw.githubusercontent.com/MKA930/galaxy-profile/main/assets/generated/en/tech-stack.svg)
 
-![Projects](https://raw.githubusercontent.com/MKA930/galaxy-profile/main/assets/generated/projects-constellation.svg)
+![Projects](https://raw.githubusercontent.com/MKA930/galaxy-profile/main/assets/generated/en/projects-constellation.svg)
 
 </div>
 
@@ -207,13 +207,13 @@ Most repositories are private due to work and personal reasons. This profile mai
 
 <div align="center">
 
-![Galaxy Header](https://raw.githubusercontent.com/MKA930/galaxy-profile/main/assets/generated/galaxy-header.svg)
+![Galaxy Header](https://raw.githubusercontent.com/MKA930/galaxy-profile/main/assets/generated/zh/galaxy-header.svg)
 
-![Stats](https://raw.githubusercontent.com/MKA930/galaxy-profile/main/assets/generated/stats-card.svg)
+![Stats](https://raw.githubusercontent.com/MKA930/galaxy-profile/main/assets/generated/zh/stats-card.svg)
 
-![Tech Stack](https://raw.githubusercontent.com/MKA930/galaxy-profile/main/assets/generated/tech-stack.svg)
+![Tech Stack](https://raw.githubusercontent.com/MKA930/galaxy-profile/main/assets/generated/zh/tech-stack.svg)
 
-![Projects](https://raw.githubusercontent.com/MKA930/galaxy-profile/main/assets/generated/projects-constellation.svg)
+![Projects](https://raw.githubusercontent.com/MKA930/galaxy-profile/main/assets/generated/zh/projects-constellation.svg)
 
 </div>
 
