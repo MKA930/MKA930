@@ -29,7 +29,16 @@ Backend & Systems Engineer since 2016, focused on architecture, high-concurrency
 
 Former **development lead**, responsible for project scheduling, architecture reviews, and delivering complex systems from requirements to production.
 
-Core strengths lie in designing reliable realtime data pipelines, handling high traffic with messaging and caching, and driving systems from concept to stable online operation. Currently exploring **Agent application development**, with emphasis on practical integration into existing backend systems.
+Core strengths lie in designing reliable realtime data pipelines, handling high traffic with messaging and caching, and driving systems from concept to stable online operation. By applying these hard-earned architectural principles to lower-level systems, I am currently exploring **AI Infra and Agent application development**. A prime example is **[sable](https://github.com/H-I-F/sable)**, a crash-safe LSM storage engine I built from scratch, with a focus on how such foundational infrastructure can be practically integrated into existing backend systems.
+
+### 🚀 Featured Open Source
+
+Building resilient infrastructure for the AI era. Maintained under the [**H-I-F**](https://github.com/H-I-F) organization.
+
+| Project | Description | Highlights | Links |
+| :--- | :--- | :--- | :--- |
+| 🗡️ **[sable](https://github.com/H-I-F/sable)** | A crash-safe, pure-Python LSM-tree storage engine. | `WAL` · `SSTable` · `Compaction` | [Repository](https://github.com/H-I-F/sable) |
+| 🧠 **[sable-vector](https://github.com/H-I-F/sable-vector)** | An embedded hybrid vector engine for local AI agents, built on sable. | `Vector DB` · `Hybrid Search` · `MCP` | [Repository](https://github.com/H-I-F/sable-vector) |
 
 ### 📊 GitHub Activity
 
@@ -56,15 +65,6 @@ Core strengths lie in designing reliable realtime data pipelines, handling high 
 ![Projects](https://raw.githubusercontent.com/MKA930/galaxy-profile/main/assets/generated/en/projects-constellation.svg)
 
 </div>
-
-### 🚀 Featured Open Source
-
-Building resilient infrastructure for the AI era. Maintained under the [**H-I-F**](https://github.com/H-I-F) organization.
-
-| Project | Description | Highlights | Links |
-| :--- | :--- | :--- | :--- |
-| 🗡️ **[sable](https://github.com/H-I-F/sable)** | A crash-safe, pure-Python LSM-tree storage engine. | `WAL` · `SSTable` · `Compaction` | [Repository](https://github.com/H-I-F/sable) |
-| 🧠 **[sable-vector](https://github.com/H-I-F/sable-vector)** | An embedded hybrid vector engine for local AI agents, built on sable. | `Vector DB` · `Hybrid Search` · `MCP` | [Repository](https://github.com/H-I-F/sable-vector) |
 
 ### 🧩 Engineering Experience
 
@@ -198,7 +198,16 @@ Most repositories are private due to work and personal reasons. This profile mai
 
 曾任 **开发负责人**，负责项目排期、架构评审，以及复杂系统从需求到上线的完整交付。
 
-核心能力在于设计可靠的实时数据链路、用消息队列与缓存应对高流量，并把系统从方案推进到稳定运行。当前正在探索 **Agent 应用的落地方式**，关注如何与现有后端系统有效结合。
+核心能力在于设计可靠的实时数据链路、用消息队列与缓存应对高流量，并把系统从方案推进到稳定运行。基于这些年在高并发与高可靠系统上的架构沉淀，目前我正将视野向底层基础设施延伸，探索 **AI Infra 与 Agent 应用的落地方式**。例如从零构建的崩溃安全 LSM 存储引擎 **[sable](https://github.com/H-I-F/sable)**，并重点关注这类底层基石如何与现有后端系统进行工程化结合。
+
+### 🚀 精选开源项目
+
+为 AI 时代打造可靠的基础设施。由 [**H-I-F**](https://github.com/H-I-F) 开源组织维护。
+
+| 项目 | 描述 | 核心特性 | 链接 |
+| :--- | :--- | :--- | :--- |
+| 🗡️ **[sable](https://github.com/H-I-F/sable)** | 崩溃安全的纯 Python LSM-Tree 存储引擎。 | `WAL` · `SSTable` · `Compaction` | [仓库地址](https://github.com/H-I-F/sable) |
+| 🧠 **[sable-vector](https://github.com/H-I-F/sable-vector)** | 基于 sable 构建的本地 AI Agent 混合检索向量引擎。 | `向量数据库` · `混合检索` · `MCP` | [仓库地址](https://github.com/H-I-F/sable-vector) |
 
 ### 📊 GitHub 动态
 
@@ -225,15 +234,6 @@ Most repositories are private due to work and personal reasons. This profile mai
 ![Projects](https://raw.githubusercontent.com/MKA930/galaxy-profile/main/assets/generated/zh/projects-constellation.svg)
 
 </div>
-
-### 🚀 精选开源项目
-
-为 AI 时代打造可靠的基础设施。由 [**H-I-F**](https://github.com/H-I-F) 开源组织维护。
-
-| 项目 | 描述 | 核心特性 | 链接 |
-| :--- | :--- | :--- | :--- |
-| 🗡️ **[sable](https://github.com/H-I-F/sable)** | 崩溃安全的纯 Python LSM-Tree 存储引擎。 | `WAL` · `SSTable` · `Compaction` | [仓库地址](https://github.com/H-I-F/sable) |
-| 🧠 **[sable-vector](https://github.com/H-I-F/sable-vector)** | 基于 sable 构建的本地 AI Agent 混合检索向量引擎。 | `向量数据库` · `混合检索` · `MCP` | [仓库地址](https://github.com/H-I-F/sable-vector) |
 
 ### 🧩 工程经历
 
