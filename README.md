@@ -57,6 +57,15 @@ Core strengths lie in designing reliable realtime data pipelines, handling high 
 
 </div>
 
+### 🚀 Featured Open Source
+
+Building resilient infrastructure for the AI era. Maintained under the [**H-I-F**](https://github.com/H-I-F) organization.
+
+| Project | Description | Highlights | Links |
+| :--- | :--- | :--- | :--- |
+| 🗡️ **[sable](https://github.com/H-I-F/sable)** | A crash-safe, pure-Python LSM-tree storage engine. | `WAL` · `SSTable` · `Compaction` | [Repository](https://github.com/H-I-F/sable) |
+| 🧠 **[sable-vector](https://github.com/H-I-F/sable-vector)** | An embedded hybrid vector engine for local AI agents, built on sable. | `Vector DB` · `Hybrid Search` · `MCP` | [Repository](https://github.com/H-I-F/sable-vector) |
+
 ### 🧩 Engineering Experience
 
 **Reusable Foundation (Yaf-based)**  
@@ -216,6 +225,15 @@ Most repositories are private due to work and personal reasons. This profile mai
 ![Projects](https://raw.githubusercontent.com/MKA930/galaxy-profile/main/assets/generated/zh/projects-constellation.svg)
 
 </div>
+
+### 🚀 精选开源项目
+
+为 AI 时代打造可靠的基础设施。由 [**H-I-F**](https://github.com/H-I-F) 开源组织维护。
+
+| 项目 | 描述 | 核心特性 | 链接 |
+| :--- | :--- | :--- | :--- |
+| 🗡️ **[sable](https://github.com/H-I-F/sable)** | 崩溃安全的纯 Python LSM-Tree 存储引擎。 | `WAL` · `SSTable` · `Compaction` | [仓库地址](https://github.com/H-I-F/sable) |
+| 🧠 **[sable-vector](https://github.com/H-I-F/sable-vector)** | 基于 sable 构建的本地 AI Agent 混合检索向量引擎。 | `向量数据库` · `混合检索` · `MCP` | [仓库地址](https://github.com/H-I-F/sable-vector) |
 
 ### 🧩 工程经历
 
